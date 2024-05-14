@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SayfalarArasiVeriTasima</string>
+    <string name="a">A</string>
+    <string name="gonder">GONDER</string>
+    <string name="go_to_b">GO TO B</string>
+    <string name="ay3">AY3</string>
+    <string name="ay4">AY4</string>
+    <string name="ay1">AY1</string>
+    <string name="ay2">AY2</string>
+    <string name="ay5">AY5</string>
+    <string name="ay6">AY6</string>
+    <string name="ay7">AY7</string>
+    <string name="birincifragment">BirinciFragment</string>
+    <string name="f1">F1</string>
+    <string name="yap">YAP</string>
+    <string name="ikinci_fragment">Ikinci Fragment</string>
+</resources>

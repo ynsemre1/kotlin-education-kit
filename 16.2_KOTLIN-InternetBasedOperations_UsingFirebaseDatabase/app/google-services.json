@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "916601707349",
+    "project_id": "fir-kullanimi-22da3",
+    "storage_bucket": "fir-kullanimi-22da3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916601707349:android:7c000a72781d7a13eeaddc",
+        "android_client_info": {
+          "package_name": "com.example.internettabanliislemler_firebasteveritabanikullanimi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916601707349-ehmohcu2g1kr9mhmb7petsg3d0h7ua74.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVsZee8cQ8GLwcYwGtzeoD_f_LVmS4qcI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916601707349-ehmohcu2g1kr9mhmb7petsg3d0h7ua74.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

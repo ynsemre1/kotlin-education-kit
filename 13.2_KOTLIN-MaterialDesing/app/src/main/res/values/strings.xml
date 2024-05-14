@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MaterialDesing</string>
+    <string name="material_desing">MATERIAL DESING</string>
+    <string name="sayfa_1">Sayfa 1</string>
+    <string name="edit_text_icin_floatinglabels_text_imput">Edit Text icin FloatingLabels (Text Imput)</string>
+    <string name="kullanici_adi_giriniz">Kullanici Adi Giriniz</string>
+    <string name="sifre_giriniz">Sifre Giriniz</string>
+    <string name="isim_giriniz">Isim Giriniz..</string>
+    <string name="yap">Yap</string>
+    <string name="sayfa_2">Sayfa 2</string>
+    <string name="sec">Sec</string>
+    <string name="ulkelertext">ulkelertext</string>
+    <string name="bos">bos</string>
+    <string name="sepete_ekle">Sepete Ekle</string>
+    <string name="django">Django</string>
+    <string name="_14_99tl">14.99TL</string>
+    <string name="resim">resim</string>
+    <string name="ben">Ben</string>
+    <string name="sen">Sen</string>
+    <string name="o">O</string>
+</resources>

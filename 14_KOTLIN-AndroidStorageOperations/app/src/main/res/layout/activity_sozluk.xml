@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SozlukApp.SozlukActivity">
+
+    <TextView
+        android:id="@+id/baslikText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sozluk App with 'Y'"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/turkceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/baslikText"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Turkce"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/ingilizceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/turkceText"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Ingilizce"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/yaz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ingilizceText"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toStartOf="@id/sil"
+        android:backgroundTint="@color/yagmur"
+        android:text="YAZ" />
+
+    <Button
+        android:id="@+id/sil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/yaz"
+        app:layout_constraintTop_toTopOf="@id/yaz"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/yagmur"
+        android:text="SIL" />
+
+    <Button
+        android:id="@+id/sozluk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/yaz"
+        app:layout_constraintEnd_toStartOf="@id/sil"
+        app:layout_constraintTop_toBottomOf="@id/yaz"
+        android:backgroundTint="@color/yagmur"
+        android:layout_marginTop="25dp"
+        android:text="SOZLUK" />
+</androidx.constraintlayout.widget.ConstraintLayout>

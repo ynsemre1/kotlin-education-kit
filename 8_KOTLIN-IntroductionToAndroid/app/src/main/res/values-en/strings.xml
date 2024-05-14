@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AndroideGiris</string>
+    <string name="mesaj">MERHABA</string>
+    <string name="textview">TextView</string>
+    <string name="button">Button</string>
+    <string name="kullaniciAdi">Username</string>
+    <string name="sifre">Password</string>
+    <string name="buttonYazi">Login</string>
+    <string name="yardim">Help?</string>
+</resources>

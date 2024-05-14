@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/materialDesing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/material_desing"
+        app:layout_constraintLeft_toLeftOf=" parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar1" />
+
+    <Button
+        android:id="@+id/sayfa1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="@string/sayfa_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/materialDesing" />
+
+    <Button
+        android:id="@+id/sayfa2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="@string/sayfa_2"
+        app:layout_constraintStart_toEndOf="@id/sayfa1"
+        app:layout_constraintTop_toTopOf="@id/materialDesing" />
+
+    <Button
+        android:id="@+id/sayfa3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="Sayfa 3"
+        app:layout_constraintStart_toEndOf="@id/sayfa2"
+        app:layout_constraintTop_toTopOf="@id/materialDesing" />
+
+    <Button
+        android:id="@+id/sayfa4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="Sayfa 4"
+        app:layout_constraintStart_toEndOf="@id/sayfa3"
+        app:layout_constraintTop_toTopOf="@id/materialDesing" />
+
+
+    <Button
+        android:id="@+id/sayfa5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="Sayfa 5"
+        app:layout_constraintStart_toStartOf="@+id/sayfa1"
+        app:layout_constraintTop_toBottomOf="@+id/sayfa1" />
+
+    <Button
+        android:id="@+id/sayfa6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="Sayfa 6"
+        app:layout_constraintStart_toEndOf="@id/sayfa1"
+        app:layout_constraintTop_toBottomOf="@id/sayfa2" />
+
+    <Button
+        android:id="@+id/sayfa7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="Sayfa 7"
+        app:layout_constraintStart_toEndOf="@id/sayfa2"
+        app:layout_constraintTop_toBottomOf="@id/sayfa2" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

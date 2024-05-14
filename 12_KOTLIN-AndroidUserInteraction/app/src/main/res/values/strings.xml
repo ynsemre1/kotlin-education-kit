@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">AndroidKullaniciEtkilesimi</string>
+    <string name="toast_mesaj_ve_ozellestirme">Toast Mesaj ve Ozellestirme</string>
+    <string name="normal">NORMAL</string>
+    <string name="ozel">OZEL</string>
+    <string name="toastmesage_selam">ToastMesage: Selam</string>
+    <string name="sayfa_1">Sayfa 1</string>
+    <string name="sayfa_2">Sayfa 2</string>
+    <string name="menu_ac">Menu Ac</string>
+    <string name="menu_olusturma">Menu Olusturma</string>
+    <string name="duzenle">Duzenle</string>
+    <string name="sil">Sil</string>
+    <string name="android_kullanici_etkilesimi">Android Kullanici Etkilesimi</string>
+    <string name="sayfa_3">Sayfa 3</string>
+    <string name="veri_giriniz">Veri Giriniz..</string>
+    <string name="normall">Normal</string>
+    <string name="geri_donus">Geri Donus</string>
+    <string name="ozell">Ozel</string>
+    <string name="sayfa_4">Sayfa 4</string>
+    <string name="gece_modu">Gece Modu</string>
+    <string name="gunduz_modu">Gunduz Modu</string>
+    <string name="selam">Selam</string>
+</resources>

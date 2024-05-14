@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/birinci_menu">
+        <menu>
+            <item
+                android:id="@+id/nav_action_birinci"
+                android:title="@string/birinci_bolum"
+                android:icon="@drawable/ic_baseline_cloud_24">
+            </item>
+
+            <item
+                android:id="@+id/nav_avtion_ikinci"
+                android:title="@string/ikinci_bolum"
+                android:icon="@drawable/ic_baseline_all_inclusive_24">
+            </item>
+        </menu>
+    </item>
+
+    <item
+        android:title="@string/ikinci_menu">
+        <menu>
+            <item
+                android:id="@+id/nav_action_ucuncu"
+                android:title="@string/ucuncu_bolum"
+                android:icon="@drawable/ic_baseline_ac_unit_24">
+            </item>
+        </menu>
+    </item>
+</menu>

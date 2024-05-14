@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RadioButtonveCheckBox.RadioButtonVeCheckBox">
+
+    <TextView
+        android:id="@+id/text8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        android:text="@string/radiobutton_ve_checkbox"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hangi_dilleri_biliyorsunuz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text8"
+        android:layout_marginTop="37dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxJava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/text9"
+        app:layout_constraintEnd_toEndOf="@id/text9"
+        app:layout_constraintTop_toBottomOf="@id/text9"
+        android:layout_marginTop="10dp"
+        android:text="@string/java" />
+
+    <CheckBox
+        android:id="@+id/checkBoxKotlin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/checkBoxJava"
+        app:layout_constraintEnd_toEndOf="@id/checkBoxJava"
+        app:layout_constraintTop_toBottomOf="@id/checkBoxJava"
+        android:layout_marginStart="6dp"
+        android:text="@string/kotlin" />
+
+    <TextView
+        android:id="@+id/text10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/checkBoxKotlin"
+        app:layout_constraintStart_toStartOf="@id/checkBoxKotlin"
+        app:layout_constraintEnd_toEndOf="@id/checkBoxKotlin"
+        android:text="@string/hangi_takimi_tutuyorsun"
+        android:layout_marginTop="30dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupTakimlar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/text10"
+        app:layout_constraintEnd_toEndOf="@id/text10"
+        app:layout_constraintTop_toBottomOf="@id/text10"
+        android:layout_marginTop="10dp" >
+
+        <RadioButton
+            android:id="@+id/radioButtonBarcelona"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/barcelona" />
+
+        <RadioButton
+            android:id="@+id/radioButtonReal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/real_madrid" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupTakimlar"
+        android:layout_marginTop="50dp"
+        android:text="@string/bas_bakalim"
+        android:textSize="10sp"
+        tools:ignore="SmallSp"
+        android:backgroundTint="@color/black"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

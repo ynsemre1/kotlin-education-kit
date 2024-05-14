@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ileriandroid_service_nonfications">
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.IleriAndroid_Service_Nonfications">
+        <activity android:name=".CountDownTimer.CountDownTimer"></activity>
+        <activity android:name=".Bildirim_DurumaBagli.DurumaBagliBildirim" />
+        <activity android:name=".BroadCastReceiver_UcakModuYakalama.UcakModuMain" />
+        <activity android:name=".BroadcastReceiver_SarzSeviyeKontrol.SarzSeviyeMain" />
+        <activity android:name=".Service.ServiceMain" />
+
+        <service android:name=".Service.TimerService" />
+
+        <receiver android:name=".BroadcastReceiver_SarzSeviyeKontrol.SarzSeviyeAlgilama" />
+        <receiver android:name=".BroadCastReceiver_SMSYakalama.SMSYakalayici">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notifiation_icon"
+            android:resource="@drawable/bildirimresim" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@android:color/holo_red_dark" />
+    </application>
+
+</manifest>

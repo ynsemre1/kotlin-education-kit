@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Firebase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Firebase"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editKisiAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Veri Adi"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@id/Firebase"
+        app:layout_constraintStart_toStartOf="@id/Firebase"
+        app:layout_constraintTop_toBottomOf="@id/Firebase" />
+
+    <Button
+        android:id="@+id/butInsert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/editKisiAd"
+        app:layout_constraintEnd_toEndOf="@id/editKisiAd"
+        app:layout_constraintTop_toBottomOf="@id/editKisiAd"
+        android:layout_marginTop="30dp"
+        android:text="Insert" />
+
+    <Button
+        android:id="@+id/butDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/butInsert"
+        app:layout_constraintEnd_toEndOf="@id/butInsert"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/butInsert"
+        android:text="Delete" />
+
+    <Button
+        android:id="@+id/butUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/butInsert"
+        app:layout_constraintEnd_toEndOf="@id/butInsert"
+        app:layout_constraintTop_toBottomOf="@id/butDelete"
+        android:layout_marginTop="10dp"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/butVeriOkuma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/butInsert"
+        app:layout_constraintEnd_toEndOf="@id/butInsert"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/butUpdate"
+        android:text="Veri Okuma" />
+
+    <Button
+        android:id="@+id/butVeriSorgu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/butInsert"
+        app:layout_constraintEnd_toEndOf="@id/butInsert"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/butVeriOkuma"
+        android:text="Veri Sorgu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

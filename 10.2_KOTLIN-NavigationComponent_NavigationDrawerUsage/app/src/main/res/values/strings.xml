@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NavigationDrawer</string>
+    <string name="birinci_menu">Birinci Menu</string>
+    <string name="birinci_bolum">Birinci Bolum</string>
+    <string name="ikinci_bolum">Ikinci Bolum</string>
+    <string name="ikinci_menu">Ikinci Menu</string>
+    <string name="ucuncu_bolum">Ucuncu Bolum</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

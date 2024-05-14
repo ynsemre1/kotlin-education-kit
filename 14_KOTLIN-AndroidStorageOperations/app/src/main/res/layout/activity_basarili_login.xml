@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginEkrani.BasariliLogin">
+
+    <TextView
+        android:id="@+id/baslikText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Basarili Login.."
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/basariliGiris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Basarili Giris Sayisi: 0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/baslikText"
+        android:layout_marginTop="100dp"
+        />
+
+    <TextView
+        android:id="@+id/basarisizGiris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Basarisiz Giris Sayisi: 0"
+        app:layout_constraintStart_toStartOf="@id/basariliGiris"
+        app:layout_constraintEnd_toEndOf="@id/basariliGiris"
+        app:layout_constraintTop_toBottomOf="@id/basariliGiris"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:id="@+id/cikisYapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/basarisizGiris"
+        android:layout_marginTop="150dp"
+        android:text="Cikis Yap" />
+</androidx.constraintlayout.widget.ConstraintLayout>

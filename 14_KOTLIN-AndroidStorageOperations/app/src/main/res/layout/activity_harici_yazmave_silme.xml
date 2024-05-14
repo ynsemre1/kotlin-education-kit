@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HariciveDahiliDepolama.HariciYazmaveSilme">
+
+    <TextView
+        android:id="@+id/baslikText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dahili Depolama - Yazma ve Silme Islemleri"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/ykelime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="@string/kelime"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/baslikText" />
+
+    <EditText
+        android:id="@+id/tkelime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ykelime"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/turkcesi"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/yazButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tkelime"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toStartOf="@id/silButton"
+        android:text="Yaz" />
+
+    <Button
+        android:id="@+id/silButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/yazButton"
+        app:layout_constraintTop_toBottomOf="@id/tkelime"
+        app:layout_constraintTop_toTopOf="@id/yazButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Sil" />
+
+    <Button
+        android:id="@+id/sozlukButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/yazButton"
+        app:layout_constraintEnd_toStartOf="@id/silButton"
+        app:layout_constraintTop_toBottomOf="@id/yazButton"
+        android:layout_marginTop="20dp"
+        android:text="SOZLUK" />
+</androidx.constraintlayout.widget.ConstraintLayout>
